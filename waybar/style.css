@@ -1,0 +1,186 @@
+/* --- Global Styles --- */
+* {
+  font-family: 'SF Pro Text', 'Inter', 'Segoe UI, NotoSans Nerd Font', sans-serif;
+  font-size: 13px;
+  min-height: 0;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+
+/* --- Waybar Container --- */
+#waybar {
+  background: transparent;
+  color: #dddddd;
+  margin: 0px;
+  font-weight: 500;
+}
+
+/* --- Left Modules --- */
+#workspaces,
+#custom-uptime,
+#temperature,
+#cpu {
+  background-color: #1a1a1a;
+  padding: 0.3rem 0.7rem;
+  margin: 5px 5px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  min-width: 0;
+  border: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#workspaces {
+  padding: 2px;
+  margin-left: 7px;
+  margin-right: 5px;
+}
+
+#custom-uptime {
+  margin-right: 5px;
+}
+
+/* Hover effects */
+#custom-uptime:hover,
+#cpu:hover {
+  background-color: #2a2a2a;
+}
+
+#workspaces button {
+  color: #aaaaaa;
+  border-radius: 5px;
+  padding: 0.3rem 0.6rem;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  outline: none;
+}
+
+#workspaces button.active {
+  color: #dddddd;
+  background-color: rgba(200, 200, 200, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(200, 200, 200, 0.2);
+}
+
+#workspaces button:hover {
+  background: #2a2a2a;
+  color: #eeeeee;
+}
+
+/* --- Center Module --- */
+#clock {
+  background-color: #1a1a1a;
+  padding: 0.3rem 0.7rem;
+  margin: 5px 0px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(200, 200, 200, 0.2);
+  min-width: 0;
+  border: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#clock:hover {
+  background-color: rgba(200, 200, 200, 0.1);
+}
+
+/* Pomodoro */
+#custom-pomodoro {
+    background-color: #1a1a1a;
+    padding: 0.3rem 0.7rem;
+    margin: 5px 0px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    min-width: 0;
+    border: none;
+    outline: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, outline 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    color: #bbbbbb;
+    font-weight: 600;
+}
+
+#custom-pomodoro {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#custom-pomodoro:hover {
+    background-color: #2a2a2a;
+    color: #eeeeee;
+    outline: 1px solid rgba(255, 255, 255, 0.1);
+    outline-offset: -1px;
+}
+
+#custom-pomodoro.work,
+#custom-pomodoro.break {
+  color: #cccccc;
+  background-color: rgba(200, 200, 200, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(200, 200, 200, 0.2);
+  outline: none;
+}
+
+/* --- Right Modules --- */
+#bluetooth,
+#pulseaudio,
+#backlight,
+#network,
+#custom-lock,
+#battery {
+  background-color: #1a1a1a;
+  padding: 0.3rem 0.7rem;
+  margin: 5px 0px; 
+  border-radius: 0;
+  box-shadow: none;
+  min-width: 0;
+  border: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#bluetooth:hover,
+#pulseaudio:hover,
+#backlight:hover,
+#network:hover,
+#custom-lock:hover,
+#battery:hover {
+  background-color: #2a2a2a;
+}
+
+#bluetooth {
+  margin-left: 0px; 
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+#battery {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin-right: 7px;
+}
+
+/* Text colors */
+#custom-uptime { color: #bbbbbb; }
+#cpu { color: #dddddd; }
+#clock { color: #cccccc; font-weight: 500; }
+#pulseaudio { color: #dddddd; }
+#backlight { color: #dddddd; }
+#network { color: #dddddd; }
+#network.disconnected { color: #aaaaaa; }
+#custom-lock { color: #bbbbbb; }
+#bluetooth { color: #888888; font-size: 16px; }
+#bluetooth.on { color: #aaaaaa; }
+#bluetooth.connected { color: #cccccc; }
+#battery { color: #cccccc; }
+#battery.charging { color: #bbbbbb; }
+#battery.warning:not(.charging) { color: #999999; }
+
+/* --- Tooltip Styles --- */
+tooltip {
+  background-color: #1a1a1a;
+  color: #dddddd;
+  padding: 5px 12px;
+  margin: 5px 0px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+}
