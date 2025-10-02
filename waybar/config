@@ -95,7 +95,7 @@
     "format": "{}",
     "format-icon": [""], 
     "tooltip": false,
-    "interval": 1600,
+    "interval": 100,
     "exec": "$HOME/.config/waybar/scripts/uptime.sh"
   },
   
