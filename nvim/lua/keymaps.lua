@@ -54,6 +54,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 vim.keymap.set('n', 'H', '<cmd>BufferPrevious<CR>', { desc = 'Goto Next Buffer' })
 vim.keymap.set('n', 'L', '<cmd>BufferNext<CR>', { desc = 'Goto Previous Buffer' })
 vim.keymap.set('n', '<Leader>bd', '<Cmd>BufferClose<CR>', { desc = 'Delete Current Buffer' })
+vim.keymap.set('n', '<Leader>ba', '<Cmd>BufferCloseAllButCurrent<CR>', { desc = 'Delete All Buffers But Current' })
 
 -- Telescope
 
