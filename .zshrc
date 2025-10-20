@@ -85,3 +85,4 @@ eval "$(zoxide init --cmd cd zsh)"
 export ANDROID_SDK_ROOT=$HOME/android_sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+EDITOR=nvim
