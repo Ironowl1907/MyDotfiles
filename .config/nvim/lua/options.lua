@@ -72,3 +72,9 @@ vim.o.scrolloff = 3
 vim.o.confirm = true
 
 -- vim: ts=2 sts=2 sw=2 et
+
+vim.opt.tabstop = 2 -- Display tabs as 2 spaces wide [web:1][web:3]
+vim.opt.shiftwidth = 2 -- Indent size of 2 spaces (using tabs) [web:1][web:3]
+vim.opt.softtabstop = 2 -- Simulate tab as 2 spaces for editing [web:3]
+vim.opt.expandtab = false -- Insert literal tabs, not spaces [web:3][web:7]
+vim.opt.smarttab = true -- Tab at start of line uses shiftwidth [web:4]
