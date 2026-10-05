@@ -85,7 +85,12 @@ eval "$(zoxide init --cmd cd zsh)"
 export ANDROID_SDK_ROOT=$HOME/android_sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/cmdline-tools/latest/bin
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+
 # Vulkan SDK
-source ~/vulkan_sdk/1.4.328.1/setup-env.sh
+source ~/vulkan_sdk/1.4.357.1/setup-env.sh
 
 EDITOR=nvim
+
+# Added by Antigravity CLI installer
+export PATH="/home/ironowl/.local/bin:$PATH"
+export PATH="/home/ironowl/.local/bin:$PATH"
