@@ -9,14 +9,14 @@
 hl.monitor({
 	output = "eDP-1",
 	mode = "1920x1200@60.00",
-	position = "0x1200",
+	position = "auto",
 	scale = 1,
 })
 
 hl.monitor({
 	output = "HDMI-A-1",
 	mode = "1920x1080@75.00",
-	position = "0x0",
+	position = "auto-up",
 	scale = 1,
 })
 
@@ -155,7 +155,6 @@ hl.animation({ leaf = "windowsIn", enabled = true, speed = 6, bezier = "winIn", 
 hl.animation({ leaf = "windowsOut", enabled = true, speed = 5, bezier = "winOut", style = "slide" })
 hl.animation({ leaf = "windowsMove", enabled = true, speed = 5, bezier = "wind", style = "slide" })
 hl.animation({ leaf = "border", enabled = true, speed = 1, bezier = "liner" })
-hl.animation({ leaf = "borderangle", enabled = true, speed = 30, bezier = "liner", style = "loop" })
 hl.animation({ leaf = "fade", enabled = true, speed = 10, bezier = "default" })
 hl.animation({ leaf = "workspaces", enabled = true, speed = 5, bezier = "wind" })
 
