@@ -9,7 +9,7 @@ num-results = 5
 font = monospace
 background-color = #000000C0
 text-color = #ffffff
-selection-color = #ffffff
 hide-cursor = true
 fuzzy-match = true
-prompt-color = #000000
+prompt-color = #00000000
+
