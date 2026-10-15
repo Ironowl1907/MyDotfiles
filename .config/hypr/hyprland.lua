@@ -140,6 +140,7 @@ hl.config({
 		disable_hyprland_logo = true,
 		disable_splash_rendering = true,
 		vrr = 0,
+		on_focus_under_fullscreen = 2, -- 0 = ignore, 1 = new window takes over, 2 = exit fullscreen/maximize
 	},
 })
 
@@ -233,7 +234,10 @@ hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 hl.bind(mainMod .. " + Z", hl.dsp.window.drag(), { mouse = true })
 hl.bind(mainMod .. " + X", hl.dsp.window.resize(), { mouse = true })
 
-hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen()) -- toggles real fullscreen, like before
+-- real fullscreen toggle
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
+-- optional: separate maximize toggle
+hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
 
 -- Resize windows (was binde -> repeating; resizeactive was relative, so relative = true)
 hl.bind(mainMod .. " + SHIFT + Right", hl.dsp.window.resize({ x = 30, y = 0, relative = true }), { repeating = true })
@@ -289,4 +293,10 @@ hl.window_rule({
 	name = "feh-float",
 	match = { class = "feh" },
 	float = true,
+})
+
+hl.window_rule({
+	name = "kitty-no-maximize",
+	match = { class = "^kitty$" },
+	suppress_event = "maximize",
 })
