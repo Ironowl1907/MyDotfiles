@@ -12,6 +12,7 @@
 
 [merge]
     conflictStyle = zdiff3
+    ff = no
 [user]
 	email = facuguialtana7@gmail.com
 	name = Ironowl1907

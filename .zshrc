@@ -89,7 +89,7 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 # Vulkan SDK
 source ~/vulkan_sdk/1.4.357.1/setup-env.sh
 
-EDITOR=nvim
+export EDITOR=nvim
 
 # Added by Antigravity CLI installer
 export PATH="/home/ironowl/.local/bin:$PATH"
