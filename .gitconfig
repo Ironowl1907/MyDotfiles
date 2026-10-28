@@ -18,3 +18,5 @@
 	name = Ironowl1907
 [fetch]
 	prune = true
+[pull]
+	ff = yes
